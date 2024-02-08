@@ -1,19 +1,29 @@
-.text-input{
-	display: flex;
-	flex-direction: column;
-}
-.text-input label{
-font-weight: 400;
-font-size: 20px;
-margin-bottom: 8px;
-}
-.text-input input{
-	border: 1px solid var(--darkBlack);
-	border-radius: 6px;
-	font-size: 16px;
-	font-weight: 400;
-	font-family: var(--font-family);
-	padding:8px;
-	color:var(--lightGrey);
+/* TextInput.css */
 
+.text-input {
+	margin-bottom: 16px;
+	appearance: none;
+		border: none;
+		outline: none;
+		border-bottom: .2em solid #E91E63;
+		background: rgba(#E91E63, .2);
+		border-radius: .2em .2em 0 0;
+		padding: .4em;
+		color: #E91E63;
+}
+
+.text-input :active{
+	text-decoration: none;
+}
+
+.text-input label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+.text-input input {
+	width: 100%;
+	padding: 8px;
+	font-size: 16px;
 }

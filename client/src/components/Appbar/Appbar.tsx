@@ -12,13 +12,13 @@ const Appbar = () => {
   return (
     <div className="appbar">
       <div className="appbar__inner">
-        <img src={`${process.env.PUBLIC_URL}/assets/images/logo.png`} alt="" />
+        <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="" className="logo"/>
 
         <div className="appbar__menus">
           <Link className="active" to="/">
             Dashboard{" "}
           </Link>
-          <Link to="/profile">Profile </Link>
+          {/* <Link to="/profile">Profile </Link> */}
 
           {isLoggedIn ? (
             <Button

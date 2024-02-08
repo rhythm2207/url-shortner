@@ -8,7 +8,14 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors(
+{
+  origin: ["https://url-shortning.vercel.app"], methods: ["POST", "GET","DELETE"],
+
+  credentials: true 
+}
+
+));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 

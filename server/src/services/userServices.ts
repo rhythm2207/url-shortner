@@ -47,7 +47,6 @@ export const handleForgotPassword = async (email: string): Promise<boolean> => {
     user.resetToken = resetToken;
     await User.findOneAndUpdate({ email: email }, user);
 
-    //send email with reset link to user
     console.log(
       "Reset link",
       `http://localhost:3000/reset-password?resetToken=${resetToken}`
@@ -91,7 +90,6 @@ export const updateUser = async (
   try {
     let data = await User.findById(userId);
 
-    //editable column restriction
     const editableColumn: Array<Partial<keyof UserType>> = [
       "fullName",
       "avatar",

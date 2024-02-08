@@ -13,8 +13,6 @@ import { verifyAccessToken } from "../middlewares/authToken";
 const router = Router();
 
 router.post("/", verifyAccessToken, async (req: Request, res: Response) => {
-  //TODO you can move this to a seperate controller
-  //TODO add validation here
 
   const { originalLink } = req.body;
 

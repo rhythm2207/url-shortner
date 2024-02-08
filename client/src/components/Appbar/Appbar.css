@@ -1,25 +1,43 @@
-.appbar{
-	padding:20px;
+/* App bar container */
+.appbar {
+	padding: 20px;
+	border : 2px solid #E91E63;
+	border-radius: 4px;
+	margin-top: 10px;
 }
-.appbar__inner{
+.logo{
+	
+}
+/* Inner container */
+.appbar__inner {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.appbar__inner img{
-	width:100%;
-	height:100%;
-	max-width:85px;
-	max-height:30px;
-	object-fit: contain;
+
+/* Logo */
+.appbar__inner img.logo {
+	max-width: 85px;
+	height: auto;
+	/* Maintain aspect ratio */
 }
-.appbar__menus{
+
+/* Navigation menu */
+.appbar__menus {
 	display: flex;
 }
-.appbar__menus h3{
-	color:var(--lightGrey);
+
+/* Menu items */
+.appbar__menus a {
+	color: #E91E63;
 	margin-left: 20px;
+	text-decoration: none;
+	transition: color 0.3s ease;
 }
-.appbar__menus h3.active{
-	color:var(--darkBlack);
+
+.appbar__menus a.active {
+	border : 3px solid #E91E63;
+	padding :8px;
+	border-radius: 20px;
+	color: var(--darkBlack);
 }

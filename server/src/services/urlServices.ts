@@ -10,7 +10,7 @@ export const createUrl = async (payload: UrlPayloadType) => {
   try {
     let url = new Url(payload);
 
-    //create urlcode
+  
     const urlCode = generateUrlcode({
       length: 8,
       uppercase: true,
