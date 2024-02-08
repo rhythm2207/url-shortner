@@ -1,7 +1,7 @@
 import axios from "axios";
 import { handleRefreshToken } from "./authServices";
 
-axios.defaults.baseURL = "https://url-shortner-eight-rosy.vercel.app/";
+axios.defaults.baseURL = "https://url-shortner-orpin.vercel.app/";
 
 axios.interceptors.request.use(
   function (config) {
