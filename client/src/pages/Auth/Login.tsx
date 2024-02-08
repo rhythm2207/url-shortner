@@ -26,7 +26,7 @@ const Login = () => {
                 email: val.toLocaleString(),
               })
             }
-            placeholder="yourname@email.com"
+            placeholder="email"
           />
           <TextInput
             label="Password"
