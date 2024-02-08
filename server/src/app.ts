@@ -8,12 +8,11 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({ origin: "http://localhost:3000" }));
 app.use(cors(
 {
-  origin: ["https://url-shortning.vercel.app"], methods: ["POST", "GET","DELETE"],
+  origin: ["https://url-shortner-frontend-nu.vercel.app/"]
 
-  credentials: true 
+  // credentials: true 
 }
 
 ));
