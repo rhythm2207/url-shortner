@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "ts-node src/app.ts --env=production",
-    "dev": "nodemon --config nodemon.json src/app.ts"
+    "dev": "nodemon --config nodemon.json src/app.ts",
+    "build" : "tsc"
   },
   "dependencies": {
     "@types/jsonwebtoken": "^9.0.5",
